@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cursonic | Agents that run the rounds</title>
+<meta name="description" content="Cursonic: home-hosted autonomous agents plus a Solana market board streamed live.">
+<meta name="theme-color" content="{{THEME}}">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preload" as="image" href="assets/logo-512.png">
+<link rel="stylesheet" href="styles.css">
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Jump to main</a>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<div class="top" id="top">
+  <header class="bar">
+    <a class="brand" href="#top" aria-label="Cursonic home">
+      <img src="assets/logo-64.png" width="32" height="32" alt="" decoding="async">
+      <span>Cursonic</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#market">Market</a>
+      <a href="#start">Start</a>
+      <a href="#agents">Agents</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#tiers">Tiers</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="bar-end">
+      <div class="socials">
+        {{SOCIAL_X}}
+        {{SOCIAL_GITHUB}}
+      </div>
+      <button class="icon-btn menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="drawer">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+      </button>
+    </div>
+  </header>
+  <div class="ca-bar">{{CA_SLOT}}</div>
+  <nav class="drawer" id="drawer" aria-label="Menu" hidden>
+    <a href="#market">Market</a><a href="#start">Start</a><a href="#agents">Agents</a><a href="#jobs">Jobs</a><a href="#tiers">Tiers</a><a href="#faq">FAQ</a>
+  </nav>
+</div>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <div class="mesh" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i><i class="grid"></i></div>
+    <div class="ghost" aria-hidden="true"><span>CURSONIC</span><span class="o">CURSONIC</span><span class="o o2">CURSONIC</span></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="pill" data-reveal><i class="dot"></i><span data-status-text>Linking market feed</span></div>
+        <h1 id="h1" data-reveal>Agents that never leave a shift unfinished.</h1>
+        <p class="lede" data-reveal>Autonomous workers hosted by local hardware, bound by personal credentials, with Solana rails for bookkeeping.</p>
+        <div class="cta" data-reveal>
+          <a class="btn btn-solid" href="#market">Watch the board</a>
+          <a class="btn btn-ghost" href="#start">Trace the first run</a>
+        </div>
+        <p class="fine" data-reveal>Code is public, data stays home. Contract facts land here once confirmed.</p>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="layer l-back" data-depth="0.35"><i class="ring r1"></i><i class="ring r2"></i></div>
+        <div class="layer l-mid" data-depth="0.7"><img src="assets/logo-512.png" width="512" height="512" alt="" decoding="async"></div>
+        <div class="layer l-front" data-depth="1.2"><span class="chip c1">route</span><span class="chip c2">verify</span><span class="chip c3">settle</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap console-wrap" aria-label="Product preview">
+    <div class="console" data-reveal data-spot>
+      <aside class="side">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <div class="search">Search</div>
+        <p class="side-h">Squad</p>
+        <ul>
+          <li class="on"><b>Dispatcher</b><small>Needs a green light</small></li>
+          <li><b>Scout</b><small>Sweeping new listings</small></li>
+          <li><b>Ledger</b><small>Reconciling each hour</small></li>
+          <li><b>Sentinel</b><small>Watching every wallet</small></li>
+          <li><b>Courier</b><small>Queued three drafts</small></li>
+        </ul>
+      </aside>
+      <div class="chat">
+        <div class="chat-top"><b>Dispatcher</b><span class="engine">local engine</span></div>
+        <div class="msgs">
+          <p class="m in">Three items need a decision: one signature, one vendor answer, one double-booked slot.</p>
+          <p class="m in">Both meetings fit a gap that suits everybody. The invite stays parked pending your approval.</p>
+          <p class="m out">Shift it.</p>
+          <p class="m in">Moved. Brief memo attached. Focus time reopened.</p>
+        </div>
+        <div class="composer">Message Dispatcher</div>
+      </div>
+    </div>
+    <p class="caption">Staged scene with invented names; no live capture.</p>
+  </section>
+
+  <section class="wrap rails" aria-label="Rails">
+    <p class="kicker">Rails</p>
+    <ul class="chips">
+      <li class="rail" data-reveal data-spot><span>Chain</span><b data-record="chain"></b></li>
+      <li class="rail" data-reveal data-spot><span>RPC</span><b data-record="rpc"></b></li>
+      <li class="rail" data-reveal data-spot><span>Market feed</span><b data-record="market"></b></li>
+      <li class="rail" data-reveal data-spot><span>Contract</span><b data-record="ca"></b></li>
+      <li class="rail" data-reveal data-spot><span>X</span><b data-record="x"></b></li>
+      <li class="rail" data-reveal data-spot><span>GitHub</span><b data-record="github"></b></li>
+    </ul>
+  </section>
+
+  <section class="sec" id="market" aria-labelledby="h-market">
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <p class="kicker">Live board</p>
+        <h2 id="h-market">Solana leaders by day volume</h2>
+        <p class="sub">Ten pairs, ranked by turnover. The board refreshes itself every minute and rests while this tab is hidden.</p>
+      </header>
+      <div class="ticker" data-ticker aria-label="Ticker"><div class="track" data-track></div></div>
+      <div class="board" data-reveal>
+        <div class="board-bar">
+          <div class="pill" data-board-pill><i class="dot"></i><span data-board-status>Connecting</span></div>
+          <button class="btn btn-ghost btn-sm" type="button" data-refresh>Refresh now</button>
+        </div>
+        <div class="table" role="table" aria-label="Top Solana pairs by volume">
+          <div class="tr th" role="row">
+            <span role="columnheader">#</span><span role="columnheader">Token</span><span role="columnheader" class="num">Price</span><span role="columnheader" class="num">Move</span><span role="columnheader" class="num">Volume</span><span role="columnheader" class="num">Liquidity</span><span role="columnheader" class="cp">Copy</span>
+          </div>
+          <div data-rows></div>
+        </div>
+        <p class="err" data-error hidden></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="start" aria-labelledby="h-start">
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <p class="kicker">Start</p>
+        <h2 id="h-start">Four moves from empty desk to first result.</h2>
+        <p class="sub">Single worker, single engine, single small errand. No extra wiring up front.</p>
+      </header>
+      <ol class="steps">
+        <li class="card step" data-reveal data-spot><span class="n">01</span><h3>Install on desktop</h3><p>Take the installer matching each laptop. Mobile apps arrive afterward as sidekicks.</p><div class="viz v-install"><i></i><i></i><i></i></div></li>
+        <li class="card step" data-reveal data-spot><span class="n">02</span><h3>Attach an engine</h3><p>Authenticate exactly one terminal engine, then rerun the probe.</p><div class="viz v-engine"><b>engine</b><em>ready</em></div></li>
+        <li class="card step" data-reveal data-spot><span class="n">03</span><h3>Name a worker</h3><p>Pick title plus model. Attach a folder solely when errands involve documents.</p><div class="viz v-worker"><b>Mira</b><em>created</em></div></li>
+        <li class="card step" data-reveal data-spot><span class="n">04</span><h3>Delegate a chore</h3><p>Request an itinerary, digest, draft. Skim each outcome before anything leaves.</p><div class="viz v-chore"><i></i><i></i><i></i></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="agents" aria-labelledby="h-agents">
+    <div class="wrap">
+      <header class="sec-head center" data-reveal>
+        <p class="kicker">Agents</p>
+        <h2 id="h-agents">A crew where everyone holds one post.</h2>
+        <p class="sub">Each worker owns one duty, one brain, one workstation. They operate concurrently here and message you solely when judgment is required.</p>
+      </header>
+      <div class="grid3">
+        <article class="card feat" data-reveal data-spot>
+          <h3>A desk per worker</h3>
+          <p>Remote desktop streamed live, or this exact laptop. Chosen individually.</p>
+          <div class="viz v-desk"><div class="term"><i>&gt; open ledger</i><i>&gt; gaps located</i><i>&gt; drafts ready</i></div></div>
+        </article>
+        <article class="card feat" data-reveal data-spot>
+          <h3>A model per post</h3>
+          <p>Change a worker's brain mid-thread. Suggested picks carry a mark, nothing mandatory.</p>
+          <div class="viz v-models"><span class="sw on">Brain alpha</span><span class="sw">Brain beta</span><span class="sw">Brain gamma</span></div>
+        </article>
+        <article class="card feat" data-reveal data-spot>
+          <h3>Tools, tightly scoped</h3>
+          <p>Mail, chat, code hosts, trackers: link each once via scoped authorization.</p>
+          <div class="viz v-tools"><b>all linked</b><span class="bar2"><i></i></span></div>
+        </article>
+        <article class="card feat" data-reveal data-spot>
+          <h3>Chats, not dashboards</h3>
+          <p>Pin, mute, clone, archive. Workers appear beside your contacts like coworkers.</p>
+          <div class="viz v-list"><span><b>Dispatcher</b><small>all drafts sent</small></span><span><b>Scout</b><small>shortlist ready</small></span><span><b>Sentinel</b><small>two flags raised</small></span></div>
+        </article>
+        <article class="card feat" data-reveal data-spot>
+          <h3>Speech on demand</h3>
+          <p>Start a voice session. Workers narrate progress and request approval verbally.</p>
+          <div class="viz v-voice"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="card feat" data-reveal data-spot>
+          <h3>Credentials stay sealed</h3>
+          <p>Paste each credential exactly one time. All workers receive it; nobody retrieves it later.</p>
+          <div class="viz v-keys"><span>••••••••••••</span><em>sealed</em></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="how" aria-labelledby="h-how">
+    <div class="wrap">
+      <header class="sec-head center" data-reveal>
+        <p class="kicker">Mechanics</p>
+        <h2 id="h-how">Everything runs close to home.</h2>
+      </header>
+      <div class="grid3">
+        <article class="card how" data-reveal data-spot><div class="viz v-cli"><i>&gt;engine-a</i><i>&gt;engine-b</i><i>&gt;engine-c</i></div><h3>Engines under your login</h3><p>Workers steer terminal engines present on this laptop, authenticated by accounts held personally. No relay between.</p></article>
+        <article class="card how" data-reveal data-spot><div class="viz v-loop"><b>loopback</b></div><h3>Single loopback hub</h3><p>A lone loopback daemon supervises every worker subprocess, converting each vendor dialect to a unified feed.</p></article>
+        <article class="card how" data-reveal data-spot><div class="viz v-disk"><b>~/cursonic</b></div><h3>Folder equals datastore</h3><p>Chat history, keys, logs remain inside a directory under your control. Exit requires a deliberate push.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="jobs" aria-labelledby="h-jobs">
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <p class="kicker">Jobs</p>
+        <h2 id="h-jobs">Select a post, read the report.</h2>
+        <p class="sub">Workers file a concise summary and park anything hazardous pending consent.</p>
+      </header>
+      <div class="jobs" data-reveal>
+        <div class="tabs" role="tablist" aria-label="Jobs" data-tabs>
+          <button role="tab" type="button" aria-selected="true" data-i="0">Dispatcher</button>
+          <button role="tab" type="button" aria-selected="false" data-i="1">Scout</button>
+          <button role="tab" type="button" aria-selected="false" data-i="2">Ledger</button>
+          <button role="tab" type="button" aria-selected="false" data-i="3">Sentinel</button>
+          <button role="tab" type="button" aria-selected="false" data-i="4">Courier</button>
+          <button role="tab" type="button" aria-selected="false" data-i="5">Fixer</button>
+          <button role="tab" type="button" aria-selected="false" data-i="6">Rival watch</button>
+          <button role="tab" type="button" aria-selected="false" data-i="7">Growth</button>
+        </div>
+        <div class="jobs-panel" role="tabpanel" data-panel></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-stack">
+    <div class="wrap">
+      <header class="sec-head center" data-reveal>
+        <p class="kicker">Reach</p>
+        <h2 id="h-stack">Hooks into existing tooling.</h2>
+      </header>
+    </div>
+    <div class="marq" aria-hidden="true"><div class="mtrack m1" data-mq>
+      <span>Browser</span><span>Terminal</span><span>Files</span><span>Mail</span><span>Chat</span><span>Code host</span><span>Tracker</span><span>Wallet watch</span><span>Spreadsheet</span><span>Calendar</span><span>Webhooks</span><span>Schedules</span>
+    </div></div>
+    <div class="marq" aria-hidden="true"><div class="mtrack m2" data-mq>
+      <span>Route</span><span>Verify</span><span>Settle</span><span>Archive</span><span>Notify</span><span>Escalate</span><span>Summarize</span><span>Reconcile</span><span>Draft</span><span>Replay</span><span>Hold</span><span>Release</span>
+    </div></div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-log">
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <p class="kicker">Build log</p>
+        <h2 id="h-log">Notes straight off the workbench.</h2>
+      </header>
+      <div class="grid3">
+        <article class="card post" data-reveal data-spot><span class="tag">Pending</span><h3>Windowed client</h3><p>First public build awaits its release thread.</p></article>
+        <article class="card post" data-reveal data-spot><span class="tag">Pending</span><h3>Mobile companion</h3><p>Handset controls follow after the client stabilizes.</p></article>
+        <article class="card post" data-reveal data-spot><span class="tag">Pending</span><h3>Schedules view</h3><p>A grid view for repeating errands is under construction.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-comm">
+    <div class="wrap">
+      <header class="sec-head center" data-reveal>
+        <p class="kicker">Circle</p>
+        <h2 id="h-comm">Numbers post once they are ours.</h2>
+        <p class="sub">Every tile below is reserved space. A figure appears solely after Cursonic owns one.</p>
+      </header>
+      <div class="tiles">
+        <div class="tile" data-reveal data-spot><span>Stars</span><b>pending</b></div>
+        <div class="tile" data-reveal data-spot><span>Members</span><b>pending</b></div>
+        <div class="tile" data-reveal data-spot><span>Online</span><b>pending</b></div>
+        <div class="tile" data-reveal data-spot><span>Holders</span><b>pending</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-road">
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <p class="kicker">Route</p>
+        <h2 id="h-road">Four legs, in order.</h2>
+      </header>
+      <ol class="road">
+        <li class="card" data-reveal data-spot><span class="n">I</span><h3>Foundation</h3><p>Core hub, first workers, the public board.</p></li>
+        <li class="card" data-reveal data-spot><span class="n">II</span><h3>Reach</h3><p>Extra engines, extra tools, scoped authorization.</p></li>
+        <li class="card" data-reveal data-spot><span class="n">III</span><h3>Settle</h3><p>Token utility tied to worker usage.</p></li>
+        <li class="card" data-reveal data-spot><span class="n">IV</span><h3>Open</h3><p>Plugin kit and shared worker recipes.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="tiers" aria-labelledby="h-tiers">
+    <div class="wrap">
+      <header class="sec-head center" data-reveal>
+        <p class="kicker">Tiers</p>
+        <h2 id="h-tiers">Access levels, figures reserved.</h2>
+        <p class="sub">Three slots hold the layout. Prices and allowances arrive when they are ours to state.</p>
+      </header>
+      <div class="grid3 tier-grid">
+        <article class="card tier" data-reveal data-spot><h3>Base</h3><p class="price">pending</p><ul><li><span>Capacity</span><b>pending</b></li><li><span>Storage</span><b>pending</b></li><li><span>Workers</span><b>pending</b></li><li><span>Retention</span><b>pending</b></li></ul></article>
+        <article class="card tier hot" data-reveal data-spot><span class="flag">Featured slot</span><h3>Core</h3><p class="price">pending</p><ul><li><span>Capacity</span><b>pending</b></li><li><span>Storage</span><b>pending</b></li><li><span>Workers</span><b>pending</b></li><li><span>Retention</span><b>pending</b></li></ul></article>
+        <article class="card tier" data-reveal data-spot><h3>Top</h3><p class="price">pending</p><ul><li><span>Capacity</span><b>pending</b></li><li><span>Storage</span><b>pending</b></li><li><span>Workers</span><b>pending</b></li><li><span>Retention</span><b>pending</b></li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" aria-labelledby="h-faq">
+    <div class="wrap narrow">
+      <header class="sec-head" data-reveal>
+        <p class="kicker">FAQ</p>
+        <h2 id="h-faq">Brief answers ahead of commitment.</h2>
+      </header>
+      <div class="faq" data-reveal>
+        <details><summary>Must a token launch precede the board?</summary><p>No. The board consumes its feed independently, whatever launch status applies.</p></details>
+        <details><summary>Where will our contract address appear?</summary><p>Inside the bar pinned beneath the header. Reads pending until confirmation, afterward becomes a tap-to-copy field.</p></details>
+        <details><summary>Which chain does Cursonic target?</summary><p>Solana. The rails strip above names the chain plus the endpoint queried.</p></details>
+        <details><summary>Why are some links gray?</summary><p>A gray icon marks a channel not yet announced. A link appears solely after the channel exists.</p></details>
+        <details><summary>Does anything leave my machine?</summary><p>Only following a deliberate push. Chat history, keys, logs sit inside a local directory.</p></details>
+        <details><summary>Will approvals ever be skipped?</summary><p>Hazardous steps wait inside a queue. Nothing exits before release.</p></details>
+        <details><summary>Should the board count as advice?</summary><p>No. Raw public figures, displayed unaltered.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closer" aria-labelledby="h-close">
+    <div class="wrap center">
+      <img src="assets/logo-192.png" width="96" height="96" alt="" loading="lazy" decoding="async" data-reveal>
+      <h2 id="h-close" data-reveal>Staff shift number one.</h2>
+      <p class="sub" data-reveal>Public code, home-hosted data, primed for one useful errand.</p>
+      <div class="cta" data-reveal><a class="btn btn-solid" href="#start">Begin here</a><a class="btn btn-ghost" href="#market">Return to board</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span class="brand"><img src="assets/logo-64.png" width="24" height="24" alt="" loading="lazy"><span>Cursonic</span></span>
+    <span class="fine">cursonic.xyz</span>
+    <span class="fine">Built on Solana</span>
+  </div>
+</footer>
+
+<script id="register" type="application/json">{{REGISTER_JSON}}</script>
+</body>
+</html>

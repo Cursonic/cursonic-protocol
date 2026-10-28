@@ -1,0 +1,25 @@
+/* The only file allowed to hold colour literals.
+   Every value is a real pixel: k-means centroid of the asset, snapped to the nearest pixel at (x,y).
+   Source frame R = reference/CURSONIC 1.jpg.jpeg, L = brand/LOGO CURSONIC PNG...png. Machine check: scripts/palette.json */
+:root {
+  --bg: #000b07;          /* R (11,8)     */
+  --bg-raised: #011009;   /* R (280,0)    */
+  --bg-panel: #00180d;    /* R (1032,17)  */
+  --bg-glow: #022d19;     /* R (656,0)    */
+  --accent: #0fc476;      /* L (1442,586) */
+  --accent-hi: #0df7ae;   /* R (1233,298) */
+  --accent-mid: #04d27d;  /* R (1174,546) */
+  --accent-deep: #035b31; /* R (1147,690) */
+  --fg: #e3ece9;          /* R (429,502)  */
+  --fg-muted: #7b8481;    /* R (644,536)  */
+
+  --line: color-mix(in srgb, var(--fg) 11%, transparent);
+  --line-strong: color-mix(in srgb, var(--accent) 38%, transparent);
+  --tint: color-mix(in srgb, var(--accent) 12%, transparent);
+  --shade: color-mix(in srgb, var(--bg) 82%, transparent);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-pop: cubic-bezier(0.2, 1.5, 0.4, 1);
+  --ease-card: cubic-bezier(0.4, 0, 0.2, 1);
+  --tap: 44px;
+}
